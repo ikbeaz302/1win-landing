@@ -1,1 +1,8 @@
+User-agent: *
+Disallow: /cdn-cgi/
+Disallow: /private/
+Disallow: /admin/
+Allow: /
+
+Sitemap: https://www.zerkalosegodnya.ru/sitemap.xml
 
