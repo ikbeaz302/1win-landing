@@ -42,7 +42,7 @@ for ( let b of document.querySelectorAll('button:not(.apkClick)')){
             console.log(`goal ${goal} reached`)
         }
         
-        let link = 'https://inhindia.com/click.php?key=sju5ct23ktwprsus156l'
+        let link = 'https://1wprde.com/casino/list?open=register&p=c24l'
         let split = this.getAttribute('data-split')
         location.href=`${link}&split=${split}`
     })
@@ -52,7 +52,7 @@ for ( let b of document.querySelectorAll('button:not(.apkClick)')){
 if (document.querySelector('.apkClick')){
     
     document.querySelector('.apkClick').addEventListener('click', function(){
-        location.href='https://inhindia.com/click.php?key=sju5ct23ktwprsus156l&split=apk';
+        location.href='https://1wprde.com/casino/list?open=register&p=c24l';
     })
     
 }
