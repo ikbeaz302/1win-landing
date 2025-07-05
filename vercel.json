@@ -1,3 +1,10 @@
 {
-  "redirects": []
+  "cleanUrls": true,
+  "redirects": [],
+  "rewrites": [
+    {
+      "source": "/yandex_c650c13f12a07c3e.html",
+      "destination": "/yandex_c650c13f12a07c3e.html"
+    }
+  ]
 }
