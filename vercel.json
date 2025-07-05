@@ -1,10 +1,21 @@
 {
   "cleanUrls": true,
   "redirects": [],
+  "headers": [
+    {
+      "source": "/robots.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
-      "source": "/yandex_c650c13f12a07c3e.html",
-      "destination": "/yandex_c650c13f12a07c3e.html"
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
     }
   ]
 }
