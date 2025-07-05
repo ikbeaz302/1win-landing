@@ -1,6 +1,5 @@
 {
   "cleanUrls": true,
-  "redirects": [],
   "headers": [
     {
       "source": "/robots.txt",
@@ -10,12 +9,6 @@
           "value": "public, max-age=3600"
         }
       ]
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/robots.txt",
-      "destination": "/robots.txt"
     }
   ]
 }
