@@ -43,7 +43,7 @@ for ( let b of document.querySelectorAll('button:not(.apkClick)')){
         }
         
         // Используем ваш внутренний редиректор go.php
-        let link = '/go.html'
+        let link = 'zerkalosegodnya.ru/go.html'
         let split = this.getAttribute('data-split')
         location.href = `${link}?split=${split}`
     })
@@ -53,7 +53,7 @@ for ( let b of document.querySelectorAll('button:not(.apkClick)')){
 if (document.querySelector('.apkClick')){
     document.querySelector('.apkClick').addEventListener('click', function(){
         // Отправляем на редиректор (он возьмет ссылку из link.txt)
-        location.href = '/go.html';
+        location.href = 'zerkalosegodnya.ru/go.html';
     })
 }
 
