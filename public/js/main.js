@@ -28,11 +28,11 @@ function openCloseMenu(e){
 
 if ( document.querySelector('.burger') ){
     document.querySelector('.burger').addEventListener('click', openCloseMenu)
-    //document.querySelector('.close').addEventListener('click', openCloseMenu)
     document.querySelector('.overlay').addEventListener('click', openCloseMenu)
 }
 
 
+// Обработка кликов по всем кнопкам (кроме скачивания APK)
 for ( let b of document.querySelectorAll('button:not(.apkClick)')){
     b.addEventListener('click', function() {
         let goal = this.getAttribute('data-goal')
@@ -42,19 +42,19 @@ for ( let b of document.querySelectorAll('button:not(.apkClick)')){
             console.log(`goal ${goal} reached`)
         }
         
-        let link = 'https://1wyvrz.life/casino/list?open=register&p=c24l'
+        // Используем ваш внутренний редиректор go.php
+        let link = '/go.php'
         let split = this.getAttribute('data-split')
-        location.href=`${link}&split=${split}`
+        location.href = `${link}?split=${split}`
     })
 }
 
-// Button android
+// Кнопка скачивания для Android
 if (document.querySelector('.apkClick')){
-    
     document.querySelector('.apkClick').addEventListener('click', function(){
-        location.href='https://1wyvrz.life/casino/list?open=register&p=c24l';
+        // Отправляем на редиректор (он возьмет ссылку из link.txt)
+        location.href = '/go.php';
     })
-    
 }
 
 const handleScroll = () => {
