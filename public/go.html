@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Переход на зеркало 1Win...</title>
+    <script>
+        // === МЕНЯЙТЕ ССЫЛКУ НИЖЕ ===
+        const actualMirror = "https://1wffxn.life/casino/list?open=register&p=c24l";
+        // ===========================
+
+        // Логика перенаправления
+        const urlParams = new URLSearchParams(window.location.search);
+        const split = urlParams.get('split') || 'default';
+        
+        // Формируем финальную ссылку с сохранением параметров
+        const finalUrl = actualMirror + "&split=" + split;
+
+        window.location.replace(finalUrl);
+    </script>
+</head>
+<body>
+    <p style="text-align:center; margin-top:50px; font-family: sans-serif;">
+        Переходим на актуальное зеркало... <br>
+        Если переход не произошел, <a href="#" id="backup-link">нажмите здесь</a>.
+    </p>
+    <script>
+        document.getElementById('backup-link').href = actualMirror;
+    </script>
+</body>
+</html>
